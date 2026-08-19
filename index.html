@@ -1136,6 +1136,54 @@ html { scroll-behavior: smooth; }
 .adopt__img .s2 { fill: none; stroke: color-mix(in srgb, var(--k) 58%, var(--ink)); stroke-linecap: round; }
 .adopt__img .sd { fill: none; stroke: color-mix(in srgb, var(--k) 70%, var(--ink)); stroke-linecap: round; stroke-dasharray: 3 4; }
 
+
+/* ---------- worked example (10) ---------- */
+.vig__head {
+  margin: 2.4rem 0 1rem; padding-bottom: .6rem;
+  border-bottom: 1px solid var(--ink-soft);
+  font-family: var(--mono); font-size: .66rem; letter-spacing: 1px;
+  text-transform: uppercase; color: var(--ink-mid);
+}
+.vig { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.vig li {
+  --k-ink: color-mix(in srgb, var(--k) 62%, var(--ink));
+  display: grid; grid-template-columns: 3.2rem 1fr; gap: 0 1rem;
+  padding: 1.15rem 0 1.25rem; position: relative;
+}
+.vig li + li { border-top: 1px solid var(--line-soft); }
+.vig__n {
+  font-family: var(--mono); font-size: .72rem; color: var(--k-ink);
+  padding-top: .32em; position: relative;
+}
+.vig__n::after {
+  content: ""; position: absolute; left: 1.85rem; top: 1.9em; bottom: -2.6rem;
+  width: 2px; background: color-mix(in srgb, var(--k) 42%, transparent);
+}
+.vig li:last-child .vig__n::after { display: none; }
+.vig__body { display: flex; flex-direction: column; gap: .4rem; }
+.vig__body h4 {
+  font-family: var(--display); font-weight: 800;
+  font-size: clamp(1.05rem, .95rem + .5vw, 1.32rem); line-height: 1.25;
+}
+.vig__body p { margin: 0; font-size: .93rem; color: var(--ink-mid); max-width: 58ch; }
+.vig__tag {
+  align-self: flex-start; margin-top: .1rem;
+  font-family: var(--mono); font-size: .6rem; letter-spacing: 1px; text-transform: uppercase;
+  color: var(--k-ink);
+  border: 1px solid color-mix(in srgb, var(--k) 45%, transparent);
+  background: color-mix(in srgb, var(--k) 10%, transparent);
+  border-radius: var(--radius-btn); padding: .22rem .5rem;
+}
+.vig__foot {
+  margin: 1.6rem 0 0; padding-top: 1.2rem; border-top: 2px solid var(--brand);
+  font-size: .95rem; color: var(--ink-mid); max-width: var(--measure);
+}
+.vig__foot strong { color: var(--ink); }
+@media (max-width: 560px) {
+  .vig li { grid-template-columns: 1fr; gap: .3rem; }
+  .vig__n::after { display: none; }
+}
+
 </style>
 </head>
 <body>
@@ -1158,11 +1206,10 @@ html { scroll-behavior: smooth; }
       <li><a href="#frontdoor"><span>07</span><span>The front door</span></a></li>
       <li><a href="#iceberg"><span>08</span><span>Below the waterline</span></a></li>
       <li><a href="#keystones"><span>09</span><span>Four projects</span></a></li>
-      <li><a href="#tech"><span>10</span><span>The technology lead</span></a></li>
-      <li><a href="#philanthropy"><span>11</span><span>Why philanthropy, why now</span></a></li>
-      <li><a href="#goals"><span>12</span><span>What we are funding toward</span></a></li>
-      <li><a href="#ask"><span>13</span><span>The ask</span></a></li>
-      <li><a href="#close"><span>14</span><span>Close</span></a></li>
+      <li><a href="#tech"><span>10</span><span>What technology unlocks</span></a></li>
+      <li><a href="#now"><span>11</span><span>Now is the time</span></a></li>
+      <li><a href="#ask"><span>12</span><span>The ask</span></a></li>
+      <li><a href="#close"><span>13</span><span>Close</span></a></li>
       </ol>
   </nav>
 
@@ -1269,6 +1316,25 @@ html { scroll-behavior: smooth; }
           </div>
           <div class="stat"><b>3–4 years</b><span>Typical wait for validation at a legacy registry before a single credit can be issued.</span></div>
           <div class="stat"><b>$700B / year</b><span>The gap between what nature finance needs and what flows, against $200B/yr committed by governments.</span></div>
+        </div>
+
+        <p class="vig__head" style="margin-top:2.2rem">The scale the market is failing to reach</p>
+        <div class="grid g3" style="margin-top:1rem">
+          <div class="card card--lit card--goal" style="--k:#4FB573">
+            <span class="tag">Global goal</span>
+            <h3>30 × 30</h3>
+            <p>30% of land and sea under effective protection by 2030, per the Kunming-Montreal framework.</p>
+          </div>
+          <div class="card card--lit card--goal" style="--k:#527984">
+            <span class="tag">Global goal</span>
+            <h3>A living carbon cycle</h3>
+            <p>Gigatons stewarded in soil, forest and coast rather than accounted on a spreadsheet — which requires measurement the people on the land can actually run.</p>
+          </div>
+          <div class="card card--lit card--goal" style="--k:#79C6AA">
+            <span class="tag">Global goal</span>
+            <h3>Biodiversity uplift at hectare scale</h3>
+            <p>A voluntary biodiversity market worth roughly $8M today, projected by the WEF at $2–7B by 2030. It will need somewhere credible to be registered.</p>
+          </div>
         </div>
 
         <div class="pull">
@@ -1692,9 +1758,9 @@ html { scroll-behavior: smooth; }
     <section id="iceberg">
       <div class="inner">
         <p class="eyebrow"><span class="num">08</span><span class="sep">/</span><span>Below the waterline</span></p>
-        <h2 class="thesis wide">Credits are the visible tenth. The machinery underneath serves far more than credits.</h2>
+        <h2 class="thesis">Credits are the tip of the iceberg.</h2>
         <div class="lede">
-          <p>What we actually built is a process: generate an environmental metric, verify it against a published standard, and bundle it into a contract people can agree on the value of. Credit markets are one buyer of that process. They are not the only one, and over the next decade they will not be the largest.</p>
+          <p><strong>The machinery underneath serves far more than credits.</strong> What we actually built is a process: generate an environmental metric, verify it against a published standard, and bundle it into a contract people can agree on the value of. Credit markets are one buyer of that process. They are not the only one, and over the next decade they will not be the largest.</p>
         </div>
 
         <div class="berg">
@@ -1817,49 +1883,66 @@ html { scroll-behavior: smooth; }
     <!-- 10 ============================================ -->
     <section id="tech">
       <div class="inner">
-        <p class="eyebrow"><span class="num">10</span><span class="sep">/</span><span>The technology lead</span></p>
+        <p class="eyebrow"><span class="num">10</span><span class="sep">/</span><span>What does the technology unlock?</span></p>
         <h2 class="thesis wide">Every hour of friction we remove is money that reaches a steward.</h2>
         <div class="lede">
-          <p>A registry is mostly plumbing. Evidence comes off a farm or a forest, gets checked against a standard, and becomes a record somebody will pay against. Every manual step in that chain costs money, and the cost lands on the project least able to carry it.</p>
-          <p>So the engineering is aimed at removing steps rather than adding features.</p>
-          <p><strong>And the design protects the people supplying the evidence.</strong> A community can prove a claim without surrendering the data behind it, because only the proof goes to the public record. For an Indigenous-governed project that is not a nicety. It is the condition for taking part at all.</p>
+          <p>Rather than describe the plumbing, follow one credit the whole way — from a satellite pass over the Ecuadorian Amazon to money in a community account.</p>
         </div>
 
-        <div class="chain">
-          <div class="chain__row">
-            <div class="chain__step"><b>Field evidence</b><span>Soil cores, camera traps, dive surveys, satellite passes</span></div>
-            <div class="chain__gap is-engine">→</div>
-            <div class="chain__step is-engine" style="--k:#527984"><b>Checked</b><span>Against a published methodology</span></div>
-            <div class="chain__gap is-engine">→</div>
-            <div class="chain__step is-engine" style="--k:#4FB573"><b>A claim</b><span>Structured, attributed, dated</span></div>
-            <div class="chain__gap is-engine">→</div>
-            <div class="chain__step is-engine" style="--k:#79C6AA"><b>The record</b><span>Written to an open ledger</span></div>
-            <div class="chain__gap is-engine">→</div>
-            <div class="chain__step"><b>Money moves</b><span>Someone pays against it</span></div>
-          </div>
-          <div class="chain__bracket">
-            <div></div>
-            <p>The claims engine — the three steps that used to need a person and a spreadsheet</p>
-          </div>
-        </div>
+        <p class="vig__head">One credit, end to end &nbsp;·&nbsp; Sharamentsa, Achuar territory, Pastaza</p>
 
-        <div class="grid g3">
-          <div class="card card--lit" style="--k:#4FB573">
-            <span class="tag">Structural, not promised</span>
-            <h3>Our own ledger</h3>
-            <p>Every issuance and retirement written to a public chain anyone can query. The record does not depend on trusting us to keep it.</p>
-          </div>
-          <div class="card card--lit" style="--k:#527984">
-            <span class="tag">In build, already earning</span>
-            <h3>The claims engine</h3>
-            <p>Field evidence to verifiable claim without manual re-entry. Contracted as the impact-accounting backend for an $8M regenerative landscape fund.</p>
-          </div>
-          <div class="card card--lit" style="--k:#FFC432">
-            <span class="tag">Public proof, private data</span>
-            <h3>Data sovereignty</h3>
-            <p>Communities keep their underlying data and publish only the proof. Built to FPIC and UNDRIP expectations rather than retrofitted to them.</p>
-          </div>
-        </div>
+        <ol class="vig">
+          <li style="--k:#527984">
+            <span class="vig__n">01</span>
+            <div class="vig__body">
+              <h4>A satellite notices something has changed.</h4>
+              <p>Planet Labs imagery over the territory is scanned for land-use change. An alert goes out — not to an auditor in another country, but to the community's own Amazank monitoring team.</p>
+              <span class="vig__tag">Remote sensing</span>
+            </div>
+          </li>
+          <li style="--k:#4FB573">
+            <span class="vig__n">02</span>
+            <div class="vig__body">
+              <h4>Someone walks out and looks.</h4>
+              <p>Twenty-one trained monitors cover roughly 10,200 hectares of headwaters. They photograph what is actually there on a smartphone, coordinates and comments attached, and upload it over Starlink. Camera traps carry the species evidence — jaguars confirmed in both monitoring cycles, 74 species documented.</p>
+              <span class="vig__tag">Field evidence</span>
+            </div>
+          </li>
+          <li style="--k:#79C6AA">
+            <span class="vig__n">03</span>
+            <div class="vig__body">
+              <h4>The evidence meets a published standard.</h4>
+              <p>Quarterly reporting collates the satellite alerts against local observation, and the Amazank team corrects it. The standard it is checked against is ERA Brazil's Umbrella Species Stewardship methodology — written by a partner, peer-reviewed here in the open, not invented by us for this project.</p>
+              <span class="vig__tag">The claims engine</span>
+            </div>
+          </li>
+          <li style="--k:#527984">
+            <span class="vig__n">04</span>
+            <div class="vig__body">
+              <h4>A claim is formed. The community keeps its data.</h4>
+              <p>Only the proof reaches the public record; the underlying observations stay with Sharamentsa. For an Indigenous-governed project that is not a courtesy — it is the condition for taking part at all.</p>
+              <span class="vig__tag">Data sovereignty</span>
+            </div>
+          </li>
+          <li style="--k:#4FB573">
+            <span class="vig__n">05</span>
+            <div class="vig__body">
+              <h4>It becomes a record anyone can query.</h4>
+              <p>Issued on Regen Ledger as <span class="t-mono">USS01-002</span>. Public, permanent, and not dependent on anyone trusting us to keep it.</p>
+              <span class="vig__tag">Our own ledger</span>
+            </div>
+          </li>
+          <li style="--k:#9A6B18">
+            <span class="vig__n">06</span>
+            <div class="vig__body">
+              <h4>Money reaches the village.</h4>
+              <p>After the 2026 governance vote the community's share is 80% — Fundación Pachamama gave up its own portion so more would land in Sharamentsa.</p>
+              <span class="vig__tag">The point of all of it</span>
+            </div>
+          </li>
+        </ol>
+
+        <p class="vig__foot">Steps 03 to 05 used to need a person and a spreadsheet. Removing them is not a feature — it is the difference between a credit that costs more to verify than it earns and one that does not. The same machinery is now contracted as the impact-accounting backend for an <strong>$8M regenerative landscape fund</strong>, and it is built to FPIC and UNDRIP expectations rather than retrofitted to them.</p>
 
         <div class="pull">
           <blockquote>“Every credit is transparently tracked on-chain from issuance to retirement, and the registration and project-update workflows are built for people who actually run field projects, not just people who audit them. That transparency is what lets buyers trust a jaguar habitat credit the same way they trust a carbon credit. As both a methodology developer and a project developer, we needed a registry built for that duality.”</blockquote>
@@ -1870,10 +1953,24 @@ html { scroll-behavior: smooth; }
     </section>
 
     <!-- 11 ============================================ -->
-    <section id="philanthropy">
+    
+
+    <!-- 12 ============================================ -->
+    
+
+    <!-- 13 ============================================ -->
+    
+
+    <!-- 12 ============================================ -->
+    <section id="now">
       <div class="inner">
-        <p class="eyebrow"><span class="num">11</span><span class="sep">/</span><span>Why philanthropy, and why now</span></p>
-        <h2 class="thesis wide">A trustworthy registry is a public good. Pricing it to break even would shut out exactly the communities it exists to serve.</h2>
+        <p class="eyebrow"><span class="num">11</span><span class="sep">/</span><span>Now is the time</span></p>
+        <h2 class="thesis wide">The Registry becomes a public institution this year. Gifts made now decide what kind.</h2>
+        <div class="lede">
+          <p>There is a cynical way to read this deck: a lot of under-resourced projects now have somewhere to go. Here is the other reading. These stewards are already doing the work, already know their land, and are not looking to generate institutional profits. They need the marginal capital that lets them keep going and the credibility that lets someone hand it to them. Meeting that need is cheaper, faster and more durable than originating projects from an office.</p>
+          <p><strong>What has been missing was never willpower.</strong> The money to protect 30% of land and sea by 2030 exists in principle. What is missing is a way for it to reach the people already doing the protecting, and a record credible enough that it keeps flowing.</p>
+          <p><strong>And the window is structural, not rhetorical.</strong> The Registry is moving out of a company and into the Regen Foundation right now. A gift made during that move helps decide what the institution becomes. A gift made after it tops up something already settled.</p>
+        </div>
 
         <div class="grid g3">
           <div class="card card--lit card--step" style="--k:#527984">
@@ -1888,8 +1985,8 @@ html { scroll-behavior: smooth; }
           </div>
           <div class="card card--lit card--step" style="--k:#FFC432">
             <span class="tag">03</span>
-            <h3>An ethical model, maturing</h3>
-            <p>Over time we grow a business model that holds all three at once: independence maintained, underserved communities served, and financial stability reached. Mature registries run on program fees — Verra earns 95.7% of revenue that way, the Climate Action Reserve 98.4%. Philanthropy funds the years before that is possible, and the ask declines as fee and partner revenue grow.</p>
+            <h3>And the ask is finite</h3>
+            <p>Mature registries run on program fees — Verra earns 95.7% of revenue that way, the Climate Action Reserve 98.4%. Philanthropy funds the years before that is possible, and the ask declines as fee and partner revenue grow. This is a bridge, not a subscription.</p>
           </div>
         </div>
 
@@ -1898,46 +1995,10 @@ html { scroll-behavior: smooth; }
         </div>
     </section>
 
-    <!-- 12 ============================================ -->
-    
-
     <!-- 13 ============================================ -->
-    <section id="goals">
-      <div class="inner">
-        <p class="eyebrow"><span class="num">12</span><span class="sep">/</span><span>What we are funding toward</span></p>
-        <h2 class="thesis wide">The most capital-efficient restoration engine anyone has built — because the willpower is already there.</h2>
-        <div class="lede">
-          <p>There is a cynical way to read this deck: a lot of under-resourced projects now have somewhere to go. Here is the other reading. These stewards are already doing the work, already know their land, and are not looking to generate institutional profits. They need the marginal capital that lets them keep going and the credibility that lets someone hand it to them. Meeting that need is cheaper, faster and more durable than originating projects from an office.</p>
-          <p><strong>Humanity has set goals it has not been able to reach — and the reason is largely institutional.</strong> The money to protect 30% of land and sea by 2030 exists in principle. What is missing is a way for it to reach the people already doing the protecting, and a record credible enough that it keeps flowing. That is the thing this campaign funds.</p>
-        </div>
-
-        <div class="grid g3">
-          <div class="card card--lit card--goal" style="--k:#4FB573">
-            <span class="tag">Global goal</span>
-            <h3>30 × 30</h3>
-            <p>30% of land and sea under effective protection by 2030, per the Kunming-Montreal framework. Governments have committed $200B/yr against a $700B/yr need.</p>
-          </div>
-          <div class="card card--lit card--goal" style="--k:#527984">
-            <span class="tag">Global goal</span>
-            <h3>A living carbon cycle</h3>
-            <p>Gigatons stewarded in soil, forest and coast rather than accounted on a spreadsheet — which requires measurement the people on the land can actually run.</p>
-          </div>
-          <div class="card card--lit card--goal" style="--k:#79C6AA">
-            <span class="tag">Global goal</span>
-            <h3>Biodiversity uplift at hectare scale</h3>
-            <p>A voluntary biodiversity market worth roughly $8M today, projected by the WEF at $2–7B by 2030. It will need somewhere credible to be registered.</p>
-          </div>
-        </div>
-
-        
-
-        </div>
-    </section>
-
-    <!-- 14 ============================================ -->
     <section id="ask" class="ask">
       <div class="inner">
-        <p class="eyebrow"><span class="num">13</span><span class="sep">/</span><span>The ask</span></p>
+        <p class="eyebrow"><span class="num">12</span><span class="sep">/</span><span>The ask</span></p>
         <h2 class="thesis">$750,000 for year one.</h2>
         <div class="lede">
           <p>The full annual cost of operating Regen Registry as a public good, against roughly $117,000 to $240,000 in earned fee revenue today.</p>
