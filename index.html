@@ -331,21 +331,22 @@ h2.thesis.wide { max-width: 26ch; }
 }
 
 .cover__statement {
-  margin: 2.5rem 0 1.8rem;
+  margin: 2.4rem 0 1.8rem;
   max-width: 44rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--brand);
   display: grid;
-  grid-template-columns: minmax(5.5rem, max-content) minmax(0, 1fr);
-  column-gap: 1.7rem;
-  row-gap: .8rem;
-  align-items: baseline;
+  grid-template-columns: max-content minmax(0, 1fr);
+  column-gap: 1.15rem;
+  row-gap: 1rem;
+  align-items: start;
 }
 
-/* the left column names the move each line makes, so the four lines read as
-   the chain they actually are: authorship, standard, record, and what it buys */
-.cover__statement .lbl {
-  font-family: var(--mono); font-size: .6rem; letter-spacing: .16em;
-  text-transform: uppercase; color: var(--accent-ink);
-  white-space: nowrap;
+/* a green mark against each move: the steward, the standard, the record */
+.cover__ico {
+  width: 1.6rem; height: 1.6rem; flex: none;
+  color: var(--brand);
+  margin-top: .1em;
 }
 .cover__statement p {
   margin: 0;
@@ -364,9 +365,8 @@ h2.thesis.wide { max-width: 26ch; }
 }
 
 @media (max-width: 700px) {
-  .cover__statement { grid-template-columns: minmax(0, 1fr); row-gap: .25rem; }
-  .cover__statement .lbl { margin-top: .85rem; }
-  .cover__statement p.payoff { grid-column: 1; margin-top: 1rem; }
+  .cover__statement { column-gap: .9rem; row-gap: .85rem; padding-top: 1.5rem; }
+  .cover__ico { width: 1.3rem; height: 1.3rem; }
 }
 
 .cover__coda {
@@ -1265,11 +1265,11 @@ html { scroll-behavior: smooth; }
         <h1>Regen Registry is the <em>home</em><br>for <span class="cycle" id="cycle" aria-live="off"><span class="cycle__word">the credit that did not exist yet</span></span><span class="cycle__stop">.</span></h1>
 
         <div class="cover__statement">
-          <span class="lbl">Authorship</span>
+          <svg class="cover__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 13.2c0-3.3 2.5-6 5.8-6 0 3.3-2.5 6-5.8 6z"/><path d="M12 13.2c0-2.8-2.1-5-4.9-5 0 2.8 2.1 5 4.9 5z"/><path d="M12 13.2v4.4"/><path d="M4.6 17.4c1.7 2.7 4.4 4.1 7.4 4.1s5.7-1.4 7.4-4.1"/></svg>
           <p>Land stewards define how their own ecological repair gets measured.</p>
-          <span class="lbl">Standard</span>
+          <svg class="cover__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9.6" r="6.3"/><path d="M9.3 9.6l2 2 3.5-3.7"/><path d="M8.4 15.2 7.1 21.4 12 19l4.9 2.4-1.3-6.2"/></svg>
           <p>We hold that work to a public standard.</p>
-          <span class="lbl">Record</span>
+          <svg class="cover__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.7" y="8.7" width="6.6" height="6.6" rx="1.1"/><rect x="14.7" y="8.7" width="6.6" height="6.6" rx="1.1"/><path d="M9.3 12h5.4"/></svg>
           <p>We write every issuance to a ledger anyone can audit.</p>
           <p class="payoff">And we make it legible to the capital that funds it.</p>
         </div>
