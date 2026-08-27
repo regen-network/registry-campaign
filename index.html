@@ -284,6 +284,7 @@ h2.thesis {
 h2.thesis.wide { max-width: 26ch; }
 
 .lede { max-width: var(--measure); color: var(--ink-mid); font-size: 1.06em; }
+#problem .lede { max-width: none; }
 .lede p + p { margin-top: 1em; }
 .lede strong { color: var(--ink); font-weight: 600; }
 
@@ -837,18 +838,26 @@ body.notes-on .reviewsec { display: block; }
 .cover figure.photo { margin-top: 2.6rem; }
 
 /* 03 runs the photograph as a band, not a hero — it sits above the detail card */
-figure.photo--inset { max-width: 44rem; }
+
 
 /* 02: the planting itself, between the plain-language setup and the diagram */
 figure.photo--strip { margin-top: 2.2rem; }
-figure.photo--strip img { aspect-ratio: 21 / 7; }
-figure.photo--inset img { aspect-ratio: 21 / 6; }
+
+
 .cover figure.photo img { aspect-ratio: 21 / 7; object-fit: cover; }
 figure.photo { margin: 1.2rem 0 0; display: flex; flex-direction: column; gap: .5rem; }
 figure.photo img {
   width: 100%; height: auto; display: block; border-radius: 2px;
   background: var(--ground-deep);
 }
+
+/* 03: smaller, and left at its own proportions — cropping it to the 21:7 band
+   squeezed a 3:2 camera-trap frame into a letterbox. */
+figure.photo--inset { max-width: 32rem; }
+figure.photo--inset img { aspect-ratio: auto; }
+
+/* 02: the planting band is composed for this crop */
+figure.photo--strip img { aspect-ratio: 21 / 7; }
 figure.photo figcaption {
   font-size: .74rem; line-height: 1.45; color: var(--ink-soft);
   display: flex; flex-wrap: wrap; gap: .3rem .7rem;
