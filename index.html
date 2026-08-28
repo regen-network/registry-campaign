@@ -857,8 +857,9 @@ figure.photo img {
 figure.photo--inset { max-width: 32rem; }
 figure.photo--inset img { aspect-ratio: auto; }
 
-/* 02: the planting band is composed for this crop */
-figure.photo--strip img { aspect-ratio: 21 / 7; }
+/* 02: the planting band — full content width, shallow, so it reads as a band
+   rather than a picture. Swap the source and this crop still holds. */
+figure.photo--strip img { aspect-ratio: 21 / 6; }
 figure.photo figcaption {
   font-size: .74rem; line-height: 1.45; color: var(--ink-soft);
   display: flex; flex-wrap: wrap; gap: .3rem .7rem;
