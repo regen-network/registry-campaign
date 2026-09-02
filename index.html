@@ -1670,7 +1670,7 @@ html { scroll-behavior: smooth; }
       <div class="inner">
         <p class="eyebrow"><span class="num">08</span><span class="sep">/</span><span>Where the work is</span></p>
         <h2 class="thesis wide">From the Ecuadorian Amazon to Central European farmland.</h2>
-        <div class="lede"><p>Four states, not one. Where credits are issuing today, where a project is registered and waiting on capacity, where a partner authored the credit protocol, and where a developer has written to us unbidden. Every registered project on Regen Ledger is on this map — filter by state, or open the lists underneath.</p></div>
+        <div class="lede"><p>Every marker on this map means one of four things: credits are issuing there today; a project is registered there and waiting on our capacity to review it; a partner there authored the credit protocol; or a developer there wrote to us unbidden. All 187 projects registered on Regen Ledger are here — filter by category, or open the lists underneath.</p></div>
 
         <div class="mcounts">
           <div style="--k:var(--brand)"><i></i><b>57</b><span>issuing today</span></div>
@@ -1685,10 +1685,10 @@ html { scroll-behavior: smooth; }
             <canvas id="mapCanvas" aria-label="Interactive project map. Use the project list below to fly to each site."></canvas>
 
             <div class="storymap__hud">
-              <div class="storymap__filters" role="group" aria-label="Filter projects by state">
+              <div class="storymap__filters" role="group" aria-label="Filter the map by category">
                 <button class="mchip is-on" data-state="live" aria-pressed="true"><i></i>Issuing today</button>
                 <button class="mchip is-on" data-state="registered" aria-pressed="true"><i></i>Registered, not yet issuing</button>
-                <button class="mchip is-on" data-state="method" aria-pressed="true"><i></i>Methodology authored here</button>
+                <button class="mchip is-on" data-state="method" aria-pressed="true"><i></i>Credit protocol authored here</button>
                 <button class="mchip is-on" data-state="inbound" aria-pressed="true"><i></i>Organic traffic</button>
               </div>
               <button class="mreset" id="mapReset">Reset view</button>
@@ -1915,7 +1915,7 @@ html { scroll-behavior: smooth; }
           </details>
 
           <details class="mlist" data-state="method">
-            <summary><i></i><b>5</b><span>Methodology authored here</span><em>credit protocols written by partners, not by us</em></summary>
+            <summary><i></i><b>5</b><span>Credit protocol authored here</span><em>credit protocols written by partners, not by us</em></summary>
             <ol class="mlist__rows is-topics">
 <li><span class="topic">Ecometric — GHG benefits in managed crop &amp; grassland</span><span>C06 · Carbon</span><em>England, United Kingdom</em></li>
 <li><span class="topic">Terrasos — habitat banking</span><span>BT01 · Biodiversity</span><em>Bogotá, Colombia</em></li>
@@ -2582,7 +2582,7 @@ html { scroll-behavior: smooth; }
     });
   }
 
-  // state: live = issuing today · method = methodology authored here · inbound = organic traffic
+  // state: live = issuing today · method = credit protocol authored here · inbound = organic traffic
   var SITES = [
     { id:'sharamentsa', slot:'sharamentsa', name:'Sharamentsa', region:'Pastaza, Ecuador', lat:-2.47, lon:-76.68, state:'live', keystone:true,
       tag:'Keystone · Biocultural · Ecuadorian Amazon',
@@ -3005,7 +3005,7 @@ html { scroll-behavior: smooth; }
       body:"Issuing on Regen Ledger under credit protocol KSH01." }
   ];
 
-  var STATE_LABEL = { live:'Issuing today', registered:'Registered, not yet issuing', method:'Methodology authored here', inbound:'Organic traffic' };
+  var STATE_LABEL = { live:'Issuing today', registered:'Registered, not yet issuing', method:'Credit protocol authored here', inbound:'Organic traffic' };
   var active = { live:true, registered:true, method:true, inbound:true };
 
   var view = { cx: -20, cy: 8, scale: 1 };
