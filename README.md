@@ -7,13 +7,23 @@ Two surfaces, one source. **Never edit `index.html` by hand — it is generated.
 | **This repo** | Funders, external | `build-external.py` | GitHub Pages — https://regen-network.github.io/registry-campaign/ |
 | `../site-internal/` | Becca, David, Gregory | `build-internal.py` | Cloudflare Pages, behind Cloudflare Access |
 
-Source of truth for both is the master fragment:
-`regen/projects/registry-fundraise/registry-campaign-deck.html`
+Source of truth for both is the master fragment `registry-campaign-deck.html`, in
+the private source repo:
+**[regen-network/registry-campaign-source](https://github.com/regen-network/registry-campaign-source)**
+
+That is where the deck is edited, reviewed and discussed — PRs and issues go there,
+not here. It is private because the master carries the open-decisions appendix, the
+editorial record, and the names of developers who approached us unsolicited and have
+not consented to being named. `build-external.py` strips all of that; this repo only
+ever receives its output.
 
 ## Updating
 
+Clone the source repo alongside this one, or keep this repo checked out at `site/`
+inside it, which is how Becca's working copy is arranged.
+
 ```sh
-cd ~/regen/projects/registry-fundraise
+cd registry-campaign-source
 
 # funder-facing
 python3 build-external.py
