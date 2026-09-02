@@ -348,10 +348,14 @@ h2.thesis.wide { max-width: 26ch; }
   text-wrap: pretty;
 }
 .cover__statement p.payoff {
-  color: var(--ink); font-style: italic;
-  font-size: clamp(1.16rem, .96rem + .78vw, 1.72rem);
-  margin-top: .6rem;
+  color: var(--ink); font-style: italic; font-weight: 600;
+  font-size: clamp(1.34rem, 1rem + 1.05vw, 2.06rem);
+  margin-top: 1.05rem;
 }
+/* 01: the payoff is the line the deck is actually arguing, so the key word
+   carries the cover's own accent (mint on the dark ground) and drops the
+   italic, which is what makes it read as emphasis rather than as more voice. */
+.payoff__key { font-style: normal; font-weight: 700; color: var(--accent-ink); }
 
 @media (max-width: 700px) {
   .cover__statement { gap: .7rem; padding-top: 1.5rem; }
@@ -1275,7 +1279,7 @@ html { scroll-behavior: smooth; }
           <p>Land stewards define how their own ecological repair gets measured.</p>
           <p>We hold that work to a public standard.</p>
           <p>We write every issuance to a ledger anyone can audit.</p>
-          <p class="payoff">And we make it legible to the capital that funds it.</p>
+          <p class="payoff">And we make it <b class="payoff__key">legible</b> to the capital that funds it.</p>
         </div>
 
         <p class="cover__coda">The Registry is moving into the Regen Foundation, so it belongs to the field rather than to us.</p>
@@ -1296,7 +1300,7 @@ html { scroll-behavior: smooth; }
     <section id="registry">
       <div class="inner">
         <p class="eyebrow"><span class="num">02</span><span class="sep">/</span><span>First principles</span></p>
-        <h2 class="thesis">A registry is the place a promise about land becomes a record.</h2>
+        <h2 class="thesis">A registry turns a promise about land into a record.</h2>
         <div class="lede">
           <p>Somebody plants mangroves in Kenya. Somebody else, sitting in an office in London, wants to pay for that — but only if it actually happened, only once, and only to the person who did it.</p>
           <p><strong>Without that record, money that wants to reach ecological repair has nowhere safe to land.</strong> What the record holds is a promissory note — good work already done and not undone, or good work about to be. The registry is not the money and it is not the work. It is the thing that lets the two find each other.</p>
@@ -1347,7 +1351,7 @@ html { scroll-behavior: smooth; }
     <section id="sharamentsa">
       <div class="inner">
         <p class="eyebrow"><span class="num">03</span><span class="sep">/</span><span>One project</span></p>
-        <h2 class="thesis wide">Everything that follows is about making work like this ordinary.</h2>
+        <h2 class="thesis wide">Everything that follows is about making work like this fundable.</h2>
         <div class="lede">
           <p>An Achuar community in the Ecuadorian Amazon holds a forest line, monitors it themselves, and is paid for doing it.</p>
         </div>
@@ -1382,7 +1386,7 @@ html { scroll-behavior: smooth; }
         <p class="eyebrow"><span class="num">04</span><span class="sep">/</span><span>The problem</span></p>
         <h2 class="thesis wide">Most ecological repair happens somewhere the market cannot see.</h2>
         <div class="lede">
-          <p>Two things decide whether repair work can be financed: whether it fits an existing standard, and whether it can afford to wait. Both were built around a well-resourced developer with a large, uniform holding in one of a handful of countries. Most of the world's repair work is somewhere else entirely, and fails on both.</p>
+          <p>Two things decide whether repair work can be financed: whether it fits an existing standard, and whether it can survive the years of unpaid work before the first credit is issued. Both were built around a well-resourced developer with a large, uniform holding in one of a handful of countries. Most of the world's repair work is somewhere else entirely, and fails on both.</p>
 
           <p><strong>The unit is too narrow.</strong> Repair got reduced to one measure — the tonne of carbon dioxide equivalent — and everything else land does was added afterwards as a co-benefit. But ecology is plural at every scale: a rainforest holds tens of thousands of species because it has tens of thousands of niches. Three or four kinds of credit cannot account for that. A soil biologist reversing desertification in Morocco. A pollinator corridor in Bosnia. An Achuar community holding a forest line in the Amazon. No box to tick, at any price.</p>
 
@@ -1439,7 +1443,7 @@ html { scroll-behavior: smooth; }
 
         <div class="pull">
           <blockquote>“We have reduced environmental sustainability and regeneration down to <strong>one unit, which is carbon dioxide equivalent</strong>, and then we've added on top of that all the biodiversity co-benefits. <strong>That's completely the wrong way round.</strong> The carbon is the life of the soil. It's the energy source and the water holding capacity and the nutrient exchange.”</blockquote>
-          <cite>David Wright · CEO, Ecometric · a Regen Registry credit-class developer · August 2026</cite>
+          <cite>David Wright · CEO, Ecometric · a Regen Registry credit-protocol developer · August 2026</cite>
         </div>
 
         </div>
@@ -1452,7 +1456,7 @@ html { scroll-behavior: smooth; }
         <h2 class="thesis wide">A registry that lets people build the unit their ecology actually needs.</h2>
 
         <div class="lede">
-          <p>Someone who knows a piece of land decides what is worth measuring on it, and writes down how to measure it. They bring that method here. It goes through public peer review. If it holds up, it becomes a credit class — and from then on they can issue against their own method, on a public record, and the credits are theirs to sell.</p>
+          <p>Someone who knows a piece of land decides what is worth measuring on it, and writes down how to measure it. They bring that method here. It goes through public peer review. If it holds up, it becomes a credit protocol — and from then on they can issue against their own method, on a public record, and the credits are theirs to sell.</p>
           <p>That is the whole mechanic.</p>
         </div>
 
@@ -1460,7 +1464,7 @@ html { scroll-behavior: smooth; }
           <div class="card card--lit" style="--k:var(--brand)">
             <span class="tag" style="color:var(--gold-ink); font-size:.72rem; letter-spacing:.12em">01 — Design freedom</span>
             <h3>Bring your own methodology</h3>
-            <p>Developers author their own credit class and take it through a four-stage public peer review. Terrasos, SeaTrees, ERA Brazil and Ecometric each wrote their own.</p>
+            <p>Developers author their own credit protocol and take it through a four-stage public peer review. Terrasos, SeaTrees, ERA Brazil and Ecometric each wrote their own.</p>
           </div>
           <div class="card card--lit" style="--k:var(--gold)">
             <span class="tag" style="color:var(--gold-ink); font-size:.72rem; letter-spacing:.12em">02 — Viability</span>
@@ -1469,8 +1473,8 @@ html { scroll-behavior: smooth; }
           </div>
           <div class="card card--lit" style="--k:var(--teal)">
             <span class="tag" style="color:var(--gold-ink); font-size:.72rem; letter-spacing:.12em">03 — Independence</span>
-            <h3>We don't grade our own homework</h3>
-            <p>We do not set the standard and sell the credit. Every issuance is written to an open ledger anyone can audit.</p>
+            <h3>We don't set the standard and sell the credit</h3>
+            <p>The standards are published, and every issuance is written to an open ledger anyone can audit. You do not have to take our word for any of it.</p>
           </div>
         </div>
 
@@ -1488,10 +1492,10 @@ html { scroll-behavior: smooth; }
         <p class="eyebrow"><span class="num">06</span><span class="sep">/</span><span>What the technology unlocks</span></p>
         <h2 class="thesis wide">Every hour of friction we remove is money that reaches a steward.</h2>
         <div class="lede">
-          <p>Follow one credit the whole way, on the project from 03: from a satellite pass over the territory to money in a community account.</p>
+          <p>Follow one claim the whole way, on the project from 03: from a satellite pass over the territory to money in a community account.</p>
         </div>
 
-        <p class="vig__head">One credit, end to end &nbsp;·&nbsp; Sharamentsa, Achuar territory, Pastaza</p>
+        <p class="vig__head">One claim, end to end &nbsp;·&nbsp; Sharamentsa, Achuar territory, Pastaza</p>
 
         <ol class="vig">
           <li style="--k:#527984">
@@ -1565,7 +1569,7 @@ html { scroll-behavior: smooth; }
           <div class="stat stat--key" style="--k:var(--teal)"><b>130</b><span>registered, not yet issuing</span></div>
           <div class="stat"><b>187</b><span>projects registered in total</span></div>
           <div class="stat"><b>17</b><span>countries</span></div>
-          <div class="stat"><b>13</b><span>credit classes</span></div>
+          <div class="stat"><b>13</b><span>credit protocols</span></div>
           <div class="stat"><b>5</b><span>credit types</span></div>
           <div class="stat"><b>80</b><span>credit batches issued</span></div>
           <div class="stat"><b>$2.4M</b><span>credits bought &amp; retired</span></div>
@@ -1666,12 +1670,12 @@ html { scroll-behavior: smooth; }
       <div class="inner">
         <p class="eyebrow"><span class="num">08</span><span class="sep">/</span><span>Where the work is</span></p>
         <h2 class="thesis wide">From the Ecuadorian Amazon to Central European farmland.</h2>
-        <div class="lede"><p>Four states, not one. Where credits are issuing today, where a project is registered and waiting on capacity, where a partner authored the credit class, and where a developer has written to us unbidden. Every registered project on Regen Ledger is on this map — filter by state, or open the lists underneath.</p></div>
+        <div class="lede"><p>Four states, not one. Where credits are issuing today, where a project is registered and waiting on capacity, where a partner authored the credit protocol, and where a developer has written to us unbidden. Every registered project on Regen Ledger is on this map — filter by state, or open the lists underneath.</p></div>
 
         <div class="mcounts">
           <div style="--k:var(--brand)"><i></i><b>57</b><span>issuing today</span></div>
           <div style="--k:var(--teal)"><i></i><b>130</b><span>registered, not yet issuing</span></div>
-          <div style="--k:var(--gold)"><i></i><b>5</b><span>credit classes authored by partners</span></div>
+          <div style="--k:var(--gold)"><i></i><b>5</b><span>credit protocols authored by partners</span></div>
           <div style="--k:var(--ink-soft)"><i></i><b>~30</b><span>organic traffic, unregistered</span></div>
           <em>Registry-wide · Regen Ledger mainnet, Aug 2026</em>
         </div>
@@ -1911,7 +1915,7 @@ html { scroll-behavior: smooth; }
           </details>
 
           <details class="mlist" data-state="method">
-            <summary><i></i><b>5</b><span>Methodology authored here</span><em>credit classes written by partners, not by us</em></summary>
+            <summary><i></i><b>5</b><span>Methodology authored here</span><em>credit protocols written by partners, not by us</em></summary>
             <ol class="mlist__rows is-topics">
 <li><span class="topic">Ecometric — GHG benefits in managed crop &amp; grassland</span><span>C06 · Carbon</span><em>England, United Kingdom</em></li>
 <li><span class="topic">Terrasos — habitat banking</span><span>BT01 · Biodiversity</span><em>Bogotá, Colombia</em></li>
@@ -2596,7 +2600,7 @@ html { scroll-behavior: smooth; }
       facts:[['Active restorations','3'],['Exclusive issuance since','Oct 2025']] },
 
     { id:'seatrees-cr', name:'SeaTrees — coral', region:'Costa Rica', lat:9.60, lon:-84.90, state:'live',
-      body:'Coral fragment outplanting under the Marine Biodiversity Stewardship credit class.' },
+      body:'Coral fragment outplanting under the Marine Biodiversity Stewardship credit protocol.' },
     { id:'seatrees-es', name:'SeaTrees — seagrass', region:'Portocolom, Mallorca', lat:39.42, lon:3.26, state:'live',
       body:'Posidonia seagrass restoration in a Natura 2000 bay, now in expert peer review.' },
 
@@ -2630,7 +2634,7 @@ html { scroll-behavior: smooth; }
     { id:'bosnia', name:'Pollinator corridor', region:'Bosnia & Herzegovina', lat:44.00, lon:17.80, state:'inbound',
       body:'A one-person project writing its own protocol, because none exists for what it needs.' },
     { id:'australia', name:'Desert regreening', region:'Australia', lat:-25.00, lon:133.00, state:'inbound',
-      body:'A credit class from an independent ecologist, plus a national nature and carbon scheme wanting a registry with shared values.' },
+      body:'A credit protocol from an independent ecologist, plus a national nature and carbon scheme wanting a registry with shared values.' },
     { id:'azores', name:'Agroforestry, instrumented', region:'Azores, Portugal', lat:37.75, lon:-25.67, state:'inbound',
       body:'IoT-instrumented agroforestry.' },
     { id:'southafrica', name:'NDVI grazing', region:'North West Province, South Africa', lat:-26.00, lon:25.60, state:'inbound',
@@ -2640,365 +2644,365 @@ html { scroll-behavior: smooth; }
     { id:'peru-bio', name:'Biocultural methodology', region:'Peruvian Amazon', lat:-8.50, lon:-74.50, state:'inbound',
       body:'A biocultural credits methodology arriving from the Peruvian Amazon.' },
 
-    /* credit classes authored by partners, marked at the author's own base */
+    /* credit protocols authored by partners, marked at the author's own base */
     { id:'terrasos-hq', name:'Terrasos', region:'Bogotá, Colombia', lat:4.71, lon:-74.07, state:'method',
-      body:'Authored BT01, the habitat banking credit class behind El Globo.' },
+      body:'Authored BT01, the habitat banking credit protocol behind El Globo.' },
     { id:'seatrees-hq', name:'SeaTrees', region:'San Diego, California', lat:32.72, lon:-117.16, state:'method',
       body:'Authored MBS01, Marine Biodiversity Stewardship — the One Block credit.' },
     { id:'kulshan-hq', name:'Kulshan Carbon Trust', region:'Bellingham, Washington', lat:48.75, lon:-122.48, state:'method',
-      body:'Authored C05, a biochar credit class for small-scale Pacific Northwest production.' },
+      body:'Authored C05, a biochar credit protocol for small-scale Pacific Northwest production.' },
 
     /* ---- every project on Regen Ledger mainnet, plotted from its on-chain jurisdiction ----
        Generated from regen/ecocredit/v1/projects + /batches, August 2026. Positions are the
        jurisdiction centroid with a deterministic scatter, NOT surveyed site coordinates. */
     { id:"BT01-002", name:"BT01-002", region:"Cundinamarca, Colombia", lat:4.797, lon:-74.144, state:"live", minor:true, cls:"BT01",
-      body:"Issuing on Regen Ledger under credit class BT01." },
+      body:"Issuing on Regen Ledger under credit protocol BT01." },
     { id:"C02-002", name:"C02-002", region:"Ohio, USA", lat:39.973, lon:-82.445, state:"live", minor:true, cls:"C02",
-      body:"Issuing on Regen Ledger under credit class C02." },
+      body:"Issuing on Regen Ledger under credit protocol C02." },
     { id:"C02-003", name:"C02-003", region:"Pennsylvania, USA", lat:41.257, lon:-77.895, state:"live", minor:true, cls:"C02",
-      body:"Issuing on Regen Ledger under credit class C02." },
+      body:"Issuing on Regen Ledger under credit protocol C02." },
     { id:"C02-004", name:"C02-004", region:"Washington, USA", lat:47.552, lon:-121.436, state:"live", minor:true, cls:"C02",
-      body:"Issuing on Regen Ledger under credit class C02." },
+      body:"Issuing on Regen Ledger under credit protocol C02." },
     { id:"C02-005", name:"C02-005", region:"Virginia, USA", lat:37.328, lon:-79.312, state:"live", minor:true, cls:"C02",
-      body:"Issuing on Regen Ledger under credit class C02." },
+      body:"Issuing on Regen Ledger under credit protocol C02." },
     { id:"C02-006", name:"C02-006", region:"Tennessee, USA", lat:35.35, lon:-87.384, state:"live", minor:true, cls:"C02",
-      body:"Issuing on Regen Ledger under credit class C02." },
+      body:"Issuing on Regen Ledger under credit protocol C02." },
     { id:"C02-007", name:"C02-007", region:"Iowa, USA", lat:41.976, lon:-92.798, state:"live", minor:true, cls:"C02",
-      body:"Issuing on Regen Ledger under credit class C02." },
+      body:"Issuing on Regen Ledger under credit protocol C02." },
     { id:"C02-008", name:"C02-008", region:"Idaho, USA", lat:44.19, lon:-114.524, state:"live", minor:true, cls:"C02",
-      body:"Issuing on Regen Ledger under credit class C02." },
+      body:"Issuing on Regen Ledger under credit protocol C02." },
     { id:"C02-009", name:"C02-009", region:"Texas, USA", lat:32.788, lon:-98.774, state:"live", minor:true, cls:"C02",
-      body:"Issuing on Regen Ledger under credit class C02." },
+      body:"Issuing on Regen Ledger under credit protocol C02." },
     { id:"C02-010", name:"C02-010", region:"Washington, USA", lat:46.987, lon:-119.94, state:"live", minor:true, cls:"C02",
-      body:"Issuing on Regen Ledger under credit class C02." },
+      body:"Issuing on Regen Ledger under credit protocol C02." },
     { id:"C02-011", name:"C02-011", region:"Illinois, USA", lat:39.861, lon:-89.135, state:"live", minor:true, cls:"C02",
-      body:"Issuing on Regen Ledger under credit class C02." },
+      body:"Issuing on Regen Ledger under credit protocol C02." },
     { id:"C02-012", name:"C02-012", region:"Illinois, USA", lat:40.042, lon:-89.782, state:"live", minor:true, cls:"C02",
-      body:"Issuing on Regen Ledger under credit class C02." },
+      body:"Issuing on Regen Ledger under credit protocol C02." },
     { id:"C03-001", name:"C03-001", region:"Indonesia", lat:-1.615, lon:119.459, state:"live", minor:true, cls:"C03",
-      body:"Issuing on Regen Ledger under credit class C03." },
+      body:"Issuing on Regen Ledger under credit protocol C03." },
     { id:"C03-003", name:"C03-003", region:"Cambodia", lat:12.406, lon:105.6, state:"live", minor:true, cls:"C03",
-      body:"Issuing on Regen Ledger under credit class C03." },
+      body:"Issuing on Regen Ledger under credit protocol C03." },
     { id:"C03-004", name:"C03-004", region:"Kenya", lat:0.863, lon:36.128, state:"live", minor:true, cls:"C03",
-      body:"Issuing on Regen Ledger under credit class C03." },
+      body:"Issuing on Regen Ledger under credit protocol C03." },
     { id:"C03-005", name:"C03-005", region:"Brazil", lat:-7.8, lon:-48.063, state:"live", minor:true, cls:"C03",
-      body:"Issuing on Regen Ledger under credit class C03." },
+      body:"Issuing on Regen Ledger under credit protocol C03." },
     { id:"C03-006", name:"C03-006", region:"DR Congo", lat:-1.703, lon:24.506, state:"live", minor:true, cls:"C03",
-      body:"Issuing on Regen Ledger under credit class C03." },
+      body:"Issuing on Regen Ledger under credit protocol C03." },
     { id:"C03-007", name:"C03-007", region:"Brazil", lat:-7.024, lon:-52.863, state:"live", minor:true, cls:"C03",
-      body:"Issuing on Regen Ledger under credit class C03." },
+      body:"Issuing on Regen Ledger under credit protocol C03." },
     { id:"C03-008", name:"C03-008", region:"China", lat:35.131, lon:106.147, state:"live", minor:true, cls:"C03",
-      body:"Issuing on Regen Ledger under credit class C03." },
+      body:"Issuing on Regen Ledger under credit protocol C03." },
     { id:"C03-009", name:"C03-009", region:"China", lat:31.346, lon:106.465, state:"live", minor:true, cls:"C03",
-      body:"Issuing on Regen Ledger under credit class C03." },
+      body:"Issuing on Regen Ledger under credit protocol C03." },
     { id:"C03-010", name:"C03-010", region:"China", lat:35.422, lon:102.229, state:"live", minor:true, cls:"C03",
-      body:"Issuing on Regen Ledger under credit class C03." },
+      body:"Issuing on Regen Ledger under credit protocol C03." },
     { id:"C03-011", name:"C03-011", region:"China", lat:31.796, lon:102.018, state:"live", minor:true, cls:"C03",
-      body:"Issuing on Regen Ledger under credit class C03." },
+      body:"Issuing on Regen Ledger under credit protocol C03." },
     { id:"C03-012", name:"C03-012", region:"Republic of the Congo", lat:-1.323, lon:15.816, state:"live", minor:true, cls:"C03",
-      body:"Issuing on Regen Ledger under credit class C03." },
+      body:"Issuing on Regen Ledger under credit protocol C03." },
     { id:"C05-001", name:"C05-001", region:"Washington, USA", lat:47.015, lon:-119.836, state:"live", minor:true, cls:"C05",
-      body:"Issuing on Regen Ledger under credit class C05." },
+      body:"Issuing on Regen Ledger under credit protocol C05." },
     { id:"C06-002", name:"C06-002", region:"England, United Kingdom", lat:53.487, lon:-1.894, state:"live", minor:true, cls:"C06",
-      body:"Issuing on Regen Ledger under credit class C06." },
+      body:"Issuing on Regen Ledger under credit protocol C06." },
     { id:"C06-003", name:"C06-003", region:"England, United Kingdom", lat:52.146, lon:-0.341, state:"live", minor:true, cls:"C06",
-      body:"Issuing on Regen Ledger under credit class C06." },
+      body:"Issuing on Regen Ledger under credit protocol C06." },
     { id:"C06-004", name:"C06-004", region:"England, United Kingdom", lat:52.066, lon:-2.482, state:"live", minor:true, cls:"C06",
-      body:"Issuing on Regen Ledger under credit class C06." },
+      body:"Issuing on Regen Ledger under credit protocol C06." },
     { id:"C06-005", name:"C06-005", region:"England, United Kingdom", lat:53.151, lon:0.165, state:"live", minor:true, cls:"C06",
-      body:"Issuing on Regen Ledger under credit class C06." },
+      body:"Issuing on Regen Ledger under credit protocol C06." },
     { id:"C06-006", name:"C06-006", region:"England, United Kingdom", lat:52.04, lon:-0.988, state:"live", minor:true, cls:"C06",
-      body:"Issuing on Regen Ledger under credit class C06." },
+      body:"Issuing on Regen Ledger under credit protocol C06." },
     { id:"C06-007", name:"C06-007", region:"England, United Kingdom", lat:52.957, lon:-2.141, state:"live", minor:true, cls:"C06",
-      body:"Issuing on Regen Ledger under credit class C06." },
+      body:"Issuing on Regen Ledger under credit protocol C06." },
     { id:"C06-008", name:"C06-008", region:"England, United Kingdom", lat:53.707, lon:-2.235, state:"live", minor:true, cls:"C06",
-      body:"Issuing on Regen Ledger under credit class C06." },
+      body:"Issuing on Regen Ledger under credit protocol C06." },
     { id:"C06-009", name:"C06-009", region:"England, United Kingdom", lat:53.716, lon:-0.659, state:"live", minor:true, cls:"C06",
-      body:"Issuing on Regen Ledger under credit class C06." },
+      body:"Issuing on Regen Ledger under credit protocol C06." },
     { id:"C06-010", name:"C06-010", region:"England, United Kingdom", lat:52.772, lon:0.129, state:"live", minor:true, cls:"C06",
-      body:"Issuing on Regen Ledger under credit class C06." },
+      body:"Issuing on Regen Ledger under credit protocol C06." },
     { id:"C06-011", name:"C06-011", region:"England, United Kingdom", lat:53.663, lon:-0.753, state:"live", minor:true, cls:"C06",
-      body:"Issuing on Regen Ledger under credit class C06." },
+      body:"Issuing on Regen Ledger under credit protocol C06." },
     { id:"C06-012", name:"C06-012", region:"England, United Kingdom", lat:53.496, lon:-2.541, state:"live", minor:true, cls:"C06",
-      body:"Issuing on Regen Ledger under credit class C06." },
+      body:"Issuing on Regen Ledger under credit protocol C06." },
     { id:"C06-013", name:"C06-013", region:"England, United Kingdom", lat:51.634, lon:0.035, state:"live", minor:true, cls:"C06",
-      body:"Issuing on Regen Ledger under credit class C06." },
+      body:"Issuing on Regen Ledger under credit protocol C06." },
     { id:"C06-014", name:"C06-014", region:"England, United Kingdom", lat:52.86, lon:-0.824, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-015", name:"C06-015", region:"England, United Kingdom", lat:51.881, lon:-2.553, state:"live", minor:true, cls:"C06",
-      body:"Issuing on Regen Ledger under credit class C06." },
+      body:"Issuing on Regen Ledger under credit protocol C06." },
     { id:"C06-016", name:"C06-016", region:"England, United Kingdom", lat:51.854, lon:-2.035, state:"live", minor:true, cls:"C06",
-      body:"Issuing on Regen Ledger under credit class C06." },
+      body:"Issuing on Regen Ledger under credit protocol C06." },
     { id:"C06-017", name:"C06-017", region:"England, United Kingdom", lat:53.416, lon:-1.565, state:"live", minor:true, cls:"C06",
-      body:"Issuing on Regen Ledger under credit class C06." },
+      body:"Issuing on Regen Ledger under credit protocol C06." },
     { id:"C06-018", name:"C06-018", region:"England, United Kingdom", lat:53.275, lon:-1.353, state:"live", minor:true, cls:"C06",
-      body:"Issuing on Regen Ledger under credit class C06." },
+      body:"Issuing on Regen Ledger under credit protocol C06." },
     { id:"C06-019", name:"C06-019", region:"England, United Kingdom", lat:52.066, lon:-1.847, state:"live", minor:true, cls:"C06",
-      body:"Issuing on Regen Ledger under credit class C06." },
+      body:"Issuing on Regen Ledger under credit protocol C06." },
     { id:"C06-020", name:"C06-020", region:"England, United Kingdom", lat:52.093, lon:-1.388, state:"live", minor:true, cls:"C06",
-      body:"Issuing on Regen Ledger under credit class C06." },
+      body:"Issuing on Regen Ledger under credit protocol C06." },
     { id:"C06-021", name:"C06-021", region:"England, United Kingdom", lat:53.178, lon:-1.824, state:"live", minor:true, cls:"C06",
-      body:"Issuing on Regen Ledger under credit class C06." },
+      body:"Issuing on Regen Ledger under credit protocol C06." },
     { id:"C06-023", name:"C06-023", region:"Liberec, Czechia", lat:50.58, lon:15.091, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-024", name:"C06-024", region:"Vysočina, Czechia", lat:49.33, lon:15.5, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-025", name:"C06-025", region:"Prague, Czechia", lat:50.013, lon:14.395, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-026", name:"C06-026", region:"Prague, Czechia", lat:50.121, lon:14.466, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-027", name:"C06-027", region:"Vysočina, Czechia", lat:49.422, lon:15.675, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-028", name:"C06-028", region:"Vysočina, Czechia", lat:49.542, lon:15.503, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-029", name:"C06-029", region:"Vysočina, Czechia", lat:49.321, lon:15.321, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-030", name:"C06-030", region:"Hradec Králové, Czechia", lat:50.191, lon:15.941, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-031", name:"C06-031", region:"Central Bohemia, Czechia", lat:50.256, lon:14.168, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-032", name:"C06-032", region:"Central Bohemia, Czechia", lat:49.978, lon:14.478, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-033", name:"C06-033", region:"Zlín, Czechia", lat:49.19, lon:17.803, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-034", name:"C06-034", region:"Central Bohemia, Czechia", lat:50.258, lon:14.214, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-035", name:"C06-035", region:"Ústí nad Labem, Czechia", lat:50.641, lon:13.599, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-036", name:"C06-036", region:"Vysočina, Czechia", lat:49.325, lon:15.508, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-037", name:"C06-037", region:"South Moravia, Czechia", lat:48.996, lon:16.726, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-038", name:"C06-038", region:"South Moravia, Czechia", lat:48.851, lon:16.434, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-039", name:"C06-039", region:"South Moravia, Czechia", lat:49.219, lon:16.413, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-040", name:"C06-040", region:"South Moravia, Czechia", lat:48.933, lon:16.86, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-041", name:"C06-041", region:"Central Bohemia, Czechia", lat:50.277, lon:14.506, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-042", name:"C06-042", region:"Central Bohemia, Czechia", lat:49.859, lon:14.849, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-043", name:"C06-043", region:"South Bohemia, Czechia", lat:49.001, lon:14.216, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-044", name:"C06-044", region:"South Bohemia, Czechia", lat:48.846, lon:14.731, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-045", name:"C06-045", region:"Ústí nad Labem, Czechia", lat:50.504, lon:14.098, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-046", name:"C06-046", region:"South Bohemia, Czechia", lat:48.947, lon:14.608, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-047", name:"C06-047", region:"South Bohemia, Czechia", lat:48.982, lon:14.753, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-048", name:"C06-048", region:"South Bohemia, Czechia", lat:49.258, lon:14.875, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-049", name:"C06-049", region:"Central Bohemia, Czechia", lat:50.1, lon:14.803, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-050", name:"C06-050", region:"Central Bohemia, Czechia", lat:49.877, lon:14.881, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-051", name:"C06-051", region:"Central Bohemia, Czechia", lat:49.864, lon:15.032, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-052", name:"C06-052", region:"Central Bohemia, Czechia", lat:50.282, lon:14.436, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-053", name:"C06-053", region:"Hradec Králové, Czechia", lat:50.384, lon:15.904, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-054", name:"C06-054", region:"South Moravia, Czechia", lat:49.114, lon:17.015, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-055", name:"C06-055", region:"Plzeň, Czechia", lat:49.559, lon:13.271, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-056", name:"C06-056", region:"Plzeň, Czechia", lat:49.47, lon:13.623, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-057", name:"C06-057", region:"South Moravia, Czechia", lat:48.985, lon:16.625, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-058", name:"C06-058", region:"South Moravia, Czechia", lat:49.047, lon:16.795, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-059", name:"C06-059", region:"Ústí nad Labem, Czechia", lat:50.52, lon:13.912, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-060", name:"C06-060", region:"Ústí nad Labem, Czechia", lat:50.423, lon:13.59, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-061", name:"C06-061", region:"Ústí nad Labem, Czechia", lat:50.666, lon:13.621, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-062", name:"C06-062", region:"Ústí nad Labem, Czechia", lat:50.643, lon:13.658, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-063", name:"C06-063", region:"Vysočina, Czechia", lat:49.511, lon:15.747, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-064", name:"C06-064", region:"Central Bohemia, Czechia", lat:50.192, lon:14.845, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-065", name:"C06-065", region:"Liberec, Czechia", lat:50.551, lon:14.913, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-066", name:"C06-066", region:"Hradec Králové, Czechia", lat:50.537, lon:16.119, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-067", name:"C06-067", region:"Hradec Králové, Czechia", lat:50.333, lon:15.645, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-068", name:"C06-068", region:"Central Bohemia, Czechia", lat:49.618, lon:14.482, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-069", name:"C06-069", region:"Hradec Králové, Czechia", lat:50.181, lon:15.943, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-070", name:"C06-070", region:"South Moravia, Czechia", lat:48.927, lon:16.365, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-071", name:"C06-071", region:"Ústí nad Labem, Czechia", lat:50.603, lon:13.712, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-072", name:"C06-072", region:"Zlín, Czechia", lat:49.252, lon:17.483, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-073", name:"C06-073", region:"South Bohemia, Czechia", lat:48.876, lon:14.652, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-074", name:"C06-074", region:"Central Bohemia, Czechia", lat:50.11, lon:14.475, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-075", name:"C06-075", region:"Zlín, Czechia", lat:49.113, lon:17.862, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-076", name:"C06-076", region:"Central Bohemia, Czechia", lat:49.75, lon:14.245, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-077", name:"C06-077", region:"Liberec, Czechia", lat:50.822, lon:14.854, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-078", name:"C06-078", region:"Vysočina, Czechia", lat:49.566, lon:15.659, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-079", name:"C06-079", region:"Plzeň, Czechia", lat:49.623, lon:13.2, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-080", name:"C06-080", region:"Central Bohemia, Czechia", lat:50.084, lon:14.326, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-081", name:"C06-081", region:"Hradec Králové, Czechia", lat:50.321, lon:15.616, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-082", name:"C06-082", region:"Vysočina, Czechia", lat:49.297, lon:15.711, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-083", name:"C06-083", region:"Central Bohemia, Czechia", lat:50.168, lon:14.634, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-084", name:"C06-084", region:"Central Bohemia, Czechia", lat:50.288, lon:14.337, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-085", name:"C06-085", region:"Central Bohemia, Czechia", lat:50.277, lon:15.05, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-086", name:"C06-086", region:"Central Bohemia, Czechia", lat:50.028, lon:14.686, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-087", name:"C06-087", region:"South Moravia, Czechia", lat:48.938, lon:16.964, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-088", name:"C06-088", region:"South Bohemia, Czechia", lat:48.782, lon:14.32, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-089", name:"C06-089", region:"South Bohemia, Czechia", lat:49.058, lon:14.204, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-090", name:"C06-090", region:"South Bohemia, Czechia", lat:49.088, lon:14.571, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-091", name:"C06-091", region:"Central Bohemia, Czechia", lat:49.851, lon:14.771, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-092", name:"C06-092", region:"Central Bohemia, Czechia", lat:49.647, lon:14.492, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-093", name:"C06-093", region:"Plzeň, Czechia", lat:49.802, lon:13.043, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-094", name:"C06-094", region:"Plzeň, Czechia", lat:49.693, lon:13.647, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-095", name:"C06-095", region:"Hradec Králové, Czechia", lat:50.455, lon:15.706, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-096", name:"C06-096", region:"Moravia-Silesia, Czechia", lat:49.882, lon:18.211, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-097", name:"C06-097", region:"Žilina, Slovakia", lat:49.174, lon:18.969, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-098", name:"C06-098", region:"Banská Bystrica, Slovakia", lat:48.461, lon:18.913, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-099", name:"C06-099", region:"Bratislava, Slovakia", lat:48.338, lon:17.109, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-100", name:"C06-100", region:"Nitra, Slovakia", lat:48.383, lon:18.629, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-101", name:"C06-101", region:"Trnava, Slovakia", lat:48.32, lon:17.509, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-102", name:"C06-102", region:"Trenčín, Slovakia", lat:48.768, lon:18.18, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-103", name:"C06-103", region:"Trenčín, Slovakia", lat:48.895, lon:18.048, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-104", name:"C06-104", region:"Košice, Slovakia", lat:48.52, lon:21.405, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-105", name:"C06-105", region:"Banská Bystrica, Slovakia", lat:48.743, lon:19.427, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-106", name:"C06-106", region:"Košice, Slovakia", lat:48.536, lon:21.311, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-107", name:"C06-107", region:"Trenčín, Slovakia", lat:48.93, lon:18.31, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-108", name:"C06-108", region:"Trenčín, Slovakia", lat:48.9, lon:18.059, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-109", name:"C06-109", region:"Prešov, Slovakia", lat:49.172, lon:21.185, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-110", name:"C06-110", region:"Nitra, Slovakia", lat:48.25, lon:18.266, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-111", name:"C06-111", region:"Nitra, Slovakia", lat:48.007, lon:18.384, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-112", name:"C06-112", region:"Trenčín, Slovakia", lat:48.704, lon:18.362, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-113", name:"C06-113", region:"Nitra, Slovakia", lat:48.219, lon:18.191, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-114", name:"C06-114", region:"Nitra, Slovakia", lat:48.406, lon:18.504, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-115", name:"C06-115", region:"Nitra, Slovakia", lat:47.982, lon:18.194, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-116", name:"C06-116", region:"Nitra, Slovakia", lat:48.275, lon:18.523, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-117", name:"C06-117", region:"Nitra, Slovakia", lat:48.143, lon:18.292, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-118", name:"C06-118", region:"Banská Bystrica, Slovakia", lat:48.918, lon:19.447, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-119", name:"C06-119", region:"Košice, Slovakia", lat:48.528, lon:21.02, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-120", name:"C06-120", region:"Prešov, Slovakia", lat:49.092, lon:21.145, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-121", name:"C06-121", region:"Trnava, Slovakia", lat:48.333, lon:17.56, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-122", name:"C06-122", region:"Nitra, Slovakia", lat:48.012, lon:18.172, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-123", name:"C06-123", region:"Prešov, Slovakia", lat:49.026, lon:21.019, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-124", name:"C06-124", region:"Banská Bystrica, Slovakia", lat:48.883, lon:19.489, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-125", name:"C06-125", region:"Banská Bystrica, Slovakia", lat:48.599, lon:19.144, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-126", name:"C06-126", region:"Trenčín, Slovakia", lat:48.828, lon:17.881, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-127", name:"C06-127", region:"Trenčín, Slovakia", lat:49.045, lon:17.934, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-128", name:"C06-128", region:"Košice, Slovakia", lat:48.831, lon:21.347, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-129", name:"C06-129", region:"Trenčín, Slovakia", lat:48.744, lon:18.312, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-130", name:"C06-130", region:"Prešov, Slovakia", lat:49.092, lon:21.057, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-131", name:"C06-131", region:"Prešov, Slovakia", lat:49.195, lon:21.151, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-132", name:"C06-132", region:"Nitra, Slovakia", lat:48.229, lon:18.474, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-133", name:"C06-133", region:"Nitra, Slovakia", lat:48.083, lon:18.285, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-134", name:"C06-134", region:"Nitra, Slovakia", lat:48.27, lon:18.085, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-135", name:"C06-135", region:"Nitra, Slovakia", lat:48.249, lon:18.243, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-136", name:"C06-136", region:"Trnava, Slovakia", lat:48.361, lon:17.35, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-137", name:"C06-137", region:"Trnava, Slovakia", lat:48.386, lon:17.399, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-138", name:"C06-138", region:"Prešov, Slovakia", lat:49.282, lon:21.415, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-139", name:"C06-139", region:"Prešov, Slovakia", lat:49.04, lon:21.295, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-140", name:"C06-140", region:"Prešov, Slovakia", lat:49.089, lon:21.076, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-141", name:"C06-141", region:"Banská Bystrica, Slovakia", lat:48.644, lon:19.598, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-142", name:"C06-142", region:"Banská Bystrica, Slovakia", lat:48.943, lon:19.032, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-143", name:"C06-143", region:"Banská Bystrica, Slovakia", lat:48.883, lon:19.463, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-144", name:"C06-144", region:"Banská Bystrica, Slovakia", lat:48.441, lon:19.127, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-145", name:"C06-145", region:"Banská Bystrica, Slovakia", lat:48.77, lon:19.295, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-146", name:"C06-146", region:"Košice, Slovakia", lat:48.713, lon:21.383, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-147", name:"C06-147", region:"Nitra, Slovakia", lat:48.395, lon:18.285, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C06-148", name:"C06-148", region:"Czechia", lat:49.811, lon:15.307, state:"registered", minor:true, cls:"C06",
-      body:"Registered on Regen Ledger under credit class C06. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C06. No credits issued yet." },
     { id:"C07-001", name:"C07-001", region:"New South Wales, Australia", lat:-30.963, lon:144.814, state:"registered", minor:true, cls:"C07",
-      body:"Registered on Regen Ledger under credit class C07. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C07. No credits issued yet." },
     { id:"C07-002", name:"C07-002", region:"New South Wales, Australia", lat:-30.904, lon:149.225, state:"registered", minor:true, cls:"C07",
-      body:"Registered on Regen Ledger under credit class C07. No credits issued yet." },
+      body:"Registered on Regen Ledger under credit protocol C07. No credits issued yet." },
     { id:"C08-001", name:"C08-001", region:"Wisconsin, USA", lat:45.091, lon:-88.79, state:"live", minor:true, cls:"C08",
-      body:"Issuing on Regen Ledger under credit class C08." },
+      body:"Issuing on Regen Ledger under credit protocol C08." },
     { id:"KSH01-001", name:"KSH01-001", region:"California, USA", lat:37.406, lon:-118.604, state:"live", minor:true, cls:"KSH01",
-      body:"Issuing on Regen Ledger under credit class KSH01." }
+      body:"Issuing on Regen Ledger under credit protocol KSH01." }
   ];
 
   var STATE_LABEL = { live:'Issuing today', registered:'Registered, not yet issuing', method:'Methodology authored here', inbound:'Organic traffic' };
